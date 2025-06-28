@@ -26,9 +26,7 @@ Download the .ovpn configuration file from the platform.
 
 Use the following command to connect:
 
-bash
-Copy
-Edit
+
 sudo openvpn filename.ovpn
 Replace filename.ovpn with the actual file name.
 
@@ -37,9 +35,7 @@ Once connected, start a machine. You’ll receive an IP address (RHOST) for the 
 # Scanning with Nmap
 Use nmap to identify open ports and services:
 
-bash
-Copy
-Edit
+
 nmap -sC -sV -oN scan.txt RHOST
 -sC: Runs default scripts
 
@@ -58,9 +54,7 @@ Common ports to look out for:
 # FTP Enumeration
 If port 21 (FTP) is open, try accessing it anonymously:
 
-bash
-Copy
-Edit
+
 ftp RHOST
 Username: anonymous
 
@@ -71,15 +65,11 @@ You may find files with credentials or other useful information here.
 # HTTP & Directory Enumeration
 If port 80 is open, visit the site:
 
-bash
-Copy
-Edit
+
 http://RHOST
 To discover hidden directories and files, use feroxbuster:
 
-bash
-Copy
-Edit
+
 feroxbuster -u http://RHOST/ -t 10 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt --filter-status 400,401,403,404 -L 2
 📖 Breakdown of the Command
 -u http://RHOST/ — URL to scan
