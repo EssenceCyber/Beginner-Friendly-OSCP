@@ -1,14 +1,8 @@
 # Beginner-Friendly-OSCP
-I realized that OSCP is hard to start out for those who are not in the industry thus I decided to make a guide through my experience
 
-This is meant to help those start out on their journey and is not a comprehensive guide on how to pass the exam.
-
-
-
-Beginner-Friendly OSCP Guide
 This guide is designed to help beginners—especially those not already in the cybersecurity industry—get started on their journey toward the OSCP (Offensive Security Certified Professional) certification.
 
-Note: This is not a comprehensive guide to passing the OSCP exam, but rather a collection of practical steps and tools I found useful during my preparation.
+Note: This is not a comprehensive guide to passing the OSCP exam, but guide on how to get started without being overwhelming.
 
 # Practice Labs
 To practice your skills, you can use platforms like:
