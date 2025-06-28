@@ -75,3 +75,19 @@ feroxbuster -u http://RHOST/ -t 10 -w /usr/share/seclists/Discovery/Web-Content/
 --filter-status 400,401,403,404 — Ignore common error responses
 
 -L 2 — Recursion depth for scanning (e.g., http://site/dir/dir1/dir2/)
+
+# Helpful links
+
+Links which are helpful that may help with starting out on your OSCP journey
+
+https://book.hacktricks.wiki/en/index.html
+
+Hacktricks gives an explaination and guide on pentesting, and what you can do against the common ports
+
+https://crackstation.net/
+
+Crackstation is useful for cracking hashes and identifying the hash type
+
+https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview
+
+A useful site on what machines to start off with to get used to OSCP
