@@ -57,14 +57,14 @@ Password: (leave blank)
 You may find files with credentials or other useful information here.
 
 # HTTP & Directory Enumeration
-If port 80 is open, visit the site:
+If port 80 is open, visit the site and this can usually be done by doing http://RHOST to access the site
 
 
-http://URL
-To discover hidden directories and files, use feroxbuster:
+To discover hidden directories and files, you can use this feroxbuster command and edit it as you see fit
 
 
 feroxbuster -u http://RHOST/ -t 10 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt --filter-status 400,401,403,404 -L 2
+
 # Breakdown of the Command
 -u http://RHOST/ — URL to scan
 
@@ -75,6 +75,16 @@ feroxbuster -u http://RHOST/ -t 10 -w /usr/share/seclists/Discovery/Web-Content/
 --filter-status 400,401,403,404 — Ignore common error responses
 
 -L 2 — Recursion depth for scanning (e.g., http://site/dir/dir1/dir2/)
+
+## Logins
+
+when you come across a login page on a site, you can try basic credentials like admin:admin, admin:password, or even test:test
+
+if that doesn’t work, figure out what the site is running (like wordpress, phpmyadmin, etc). then google the default credentials for that service
+
+you can also look around the site for clues. sometimes creds are hidden in page source, comments, robots.txt, or backup files. other times, you might be able to use sql injection to bypass the login (like using ' OR '1'='1)
+
+
 
 # Helpful links
 
