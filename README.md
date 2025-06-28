@@ -66,12 +66,12 @@ You may find files with credentials or other useful information here.
 If port 80 is open, visit the site:
 
 
-http://RHOST
+http://URL
 To discover hidden directories and files, use feroxbuster:
 
 
 feroxbuster -u http://RHOST/ -t 10 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt --filter-status 400,401,403,404 -L 2
-📖 Breakdown of the Command
+# Breakdown of the Command
 -u http://RHOST/ — URL to scan
 
 -t 10 — Number of threads (speed of scan)
@@ -80,4 +80,4 @@ feroxbuster -u http://RHOST/ -t 10 -w /usr/share/seclists/Discovery/Web-Content/
 
 --filter-status 400,401,403,404 — Ignore common error responses
 
--L 2 — Recursion depth for scanning (e.g., /dir1/dir2/)
+-L 2 — Recursion depth for scanning (e.g., http://site/dir/dir1/dir2/)
